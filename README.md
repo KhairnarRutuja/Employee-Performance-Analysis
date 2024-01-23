@@ -137,13 +137,13 @@ Principal Component Analysis is a statistical technique designed to analyze larg
 The pre-processed data, incorporating all the transformations and modifications, is saved into a new file.
 The target feature is added to the saved file to ensure completeness and facilitate further analysis.
 
-#### 1. What were the most important features selected for analysis and why?
+### 1. What were the most important features selected for analysis and why?
 - The most important features selected for analysis were determined through Principal Component Analysis (PCA). After dropping unique and constant columns, the dataset initially comprised 27 features. The PCA analysis revealed that retaining 25 features resulted in minimal variance loss. Therefore, these 25 features were considered the most important for further analysis. PCA is utilized to reduce dimensionality while preserving essential variance, making the chosen features representative of the dataset and suitable for in-depth analysis.
  
-#### 2. Did you make any important feature transformations?
+### 2. Did you make any important feature transformations?
 - Yes, an important feature transformation was applied to address skewness and kurtosis in the "YearsSinceLastPromotion" feature. Specifically, a Square Root Transformation technique was employed. This transformation involves replacing each data point with its square root, and it is particularly useful for handling skewness, especially in count data or small whole numbers. Additionally, to handle negative values, a constant was added before the transformation. The Square Root Transformation aims to improve the distributional properties of the "YearsSinceLastPromotion" feature, making it more suitable for analysis.
   
-#### 3. Correlation or interactions among the features selected and how it is considered?
+###  3. Correlation or interactions among the features selected and how it is considered?
 - In the context of the feature selection process using Principal Component Analysis (PCA), the technique inherently considers correlations or interactions among the features.
 Correlations: PCA looks at how features relate to each other.
 Interactions: It identifies patterns or interactions among features.
